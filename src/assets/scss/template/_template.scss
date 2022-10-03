@@ -1,0 +1,45 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles
+body,
+html,
+.body {
+  background: #e4e5ea;
+  background-color: #e4e5ea;
+}
+
+.header {
+  background: #ff690f;
+  background-color: #ff690f;
+
+  .columns {
+    padding-bottom: 20px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    padding-top: 20px;
+
+    .logo_white {
+      width: 128px;
+    }
+    .user_icon {
+      width: 32px;
+    }
+  }
+}
+
+.sub-header {
+  background: #d65600;
+  background-color: #d65600;
+
+  .columns {
+    padding-bottom: 20px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    padding-top: 20px;
+
+    h1 {
+      color: white;
+    }
+  }
+}
