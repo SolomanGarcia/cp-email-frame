@@ -47,7 +47,7 @@ html,
 
       .icons {
         width: 20px;
-        margin-right: 10px;
+        margin-right: 5px;
         display: inline-block;
         vertical-align: bottom;
       }
@@ -145,9 +145,11 @@ html,
   &>tbody>tr>th {
     padding-top: 0;
   }
+
   .first-offer {
     padding-top: 16px !important;
   }
+
   .offer {
     background: #ffffff;
     background-color: #ffffff;
@@ -245,6 +247,7 @@ html,
         text-align: center;
         padding-bottom: 20px;
       }
+
       p {
         color: #334755;
         font-weight: 400;
@@ -260,41 +263,54 @@ html,
   background: #222d37;
   background-color: #222d37;
   color: white;
-  & > tbody > tr > th {
+
+  &>tbody>tr {
+    vertical-align: middle;
+  }
+
+  &>tbody>tr>th {
     padding-bottom: 25px !important;
     padding-top: 30px !important;
     padding-left: 30px !important;
     padding-right: 30px !important;
   }
+
   th {
     padding-bottom: 0px;
     padding-top: 0px;
   }
+
   .circle-logo {
     display: block;
     margin: 0 auto;
   }
+
   .call-to-action {
     display: block;
     font-size: 14px;
+    color: white;
+    padding-left: 10px;
   }
+
   .info {
     display: block;
     font-size: 12px;
     hyphens: none;
-  }
-  .info-section > table > tbody > tr > th {
-    padding-left: 10px;
     color: white;
+    padding-left: 10px;
   }
+
   .store-logos {
     img {
       height: 40px;
       width: 120px;
       display: block;
       margin: 0 auto;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
-    & > table > tbody > tr > th > table > tbody > tr > th {
+
+    &>table>tbody>tr>th>table>tbody>tr>th {
       padding-bottom: 5px;
     }
   }
@@ -303,26 +319,68 @@ html,
 .footer-social {
   background: #14181c;
   background-color: #14181c;
-  & > tbody > tr > th {
+
+  &>tbody>tr>th {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   th {
     padding-top: 0;
     padding-bottom: 0;
   }
+
   .logo-section {
-    vertical-align: middle;
     img {
       width: 128px;
     }
   }
+
   .social-icons {
     img {
       width: 32px;
       max-width: none !important;
       display: block;
       margin: 0 auto;
+    }
+  }
+}
+
+.footer-menu {
+  background: #14181c;
+  background-color: #14181c;
+  border-top: 1px solid #2d3e4b;
+  border-bottom: 1px solid #2d3e4b;
+
+  .columns {
+    padding-bottom: 5px;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    padding-top: 5px;
+
+    a {
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+
+      .icons {
+        width: 20px;
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+    }
+
+    th {
+      text-align: center;
+    }
+
+    .menu-divider {
+      display: block;
+      height: 20px;
+      width: 1px;
+      background: #2d3e4b;
+      background-color: #2d3e4b;
     }
   }
 }
