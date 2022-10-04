@@ -130,6 +130,7 @@ html,
     border: 1px solid #fff;
     border-radius: 5px;
     color: white;
+
     &:hover {
       color: $primary-color;
     }
@@ -139,13 +140,17 @@ html,
 .content-area {
   background: #f1f4f7;
   background-color: #f1f4f7;
-  & > tbody >tr >th {
-    padding-top: 16px;
+
+  &>tbody>tr>th {
+    padding-top: 0;
+  }
+  .first-offer {
+    padding-top: 16px !important;
   }
   .offer {
     background: #ffffff;
     background-color: #ffffff;
-  
+
     .columns {
       th {
         padding-top: 20px;
@@ -153,16 +158,17 @@ html,
         padding-right: 20px;
         padding-left: 20px;
       }
-      & > table {
+
+      &>table {
         max-width: 568px;
         table-layout: fixed;
       }
     }
-  
+
     img {
       padding-bottom: 20px;
     }
-  
+
     h2 {
       color: white;
       font-weight: 900;
@@ -170,7 +176,7 @@ html,
       text-align: center;
       padding-bottom: 20px;
     }
-  
+
     p {
       color: #334755;
       font-weight: 600;
@@ -178,26 +184,26 @@ html,
       text-align: center;
       padding-bottom: 20px;
     }
-  
+
     span {
       color: white;
       font-weight: 600;
       font-size: 16px;
       text-align: center;
       display: block;
-  
+
       &.save_amount {
         font-size: 14px;
         color: #1a88f3;
       }
-  
+
       &.tiny_info {
         font-size: 10px;
         font-weight: 500;
         padding-bottom: 10px;
         color: #334755;
       }
-  
+
       &.price {
         font-size: 20px;
         font-weight: 600;
@@ -205,20 +211,45 @@ html,
         color: #334755;
       }
     }
-  
+
     .button {
       background: #14181c;
       background-color: #14181c;
-      display: inline-block;
+      display: block;
       width: 150px;
       text-align: center;
       padding-top: 7px;
       padding-bottom: 7px;
       border: 1px solid #fff;
-      border-radius: 3px;
+      border-radius: 5px;
       color: white;
+      margin: 0 auto;
+
       &:hover {
         color: $primary-color;
+      }
+    }
+
+    &.last-offer {
+      .group-icons {
+        width: 190px;
+        margin: 0 auto;
+        padding-bottom: 0;
+      }
+
+      h4 {
+        color: #334755;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      p {
+        color: #334755;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
       }
     }
   }
