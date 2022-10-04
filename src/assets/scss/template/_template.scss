@@ -7,6 +7,7 @@ html,
 .body {
   background: #e4e5ea;
   background-color: #e4e5ea;
+  padding-bottom: 300px;
 }
 
 .header {
@@ -255,16 +256,39 @@ html,
   }
 }
 
-.footer {
-  background: black;
-  background-color: black;
-
-  .footer-container {
-    background: black;
-    background-color: black;
+.footer-top {
+  background: #222d37;
+  background-color: #222d37;
+  color: white;
+  & > tbody > tr > th {
+    padding-bottom: 30px !important;
+    padding-top: 30px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
-
-  a {
-    color: red;
+  th {
+    padding-bottom: 0;
+  }
+  .call-to-action {
+    display: block;
+    font-size: 14px;
+  }
+  .info {
+    display: block;
+    font-size: 12px;
+  }
+  .info-section > table > tbody > tr > th {
+    padding-left: 10px;
+    color: white;
+  }
+  .store-logos {
+    img {
+      height: 40px;
+      display: block;
+      margin: 0 auto;
+    }
+    .columns th.first {
+      
+    }
   }
 }
