@@ -397,24 +397,21 @@ html,
   }
 
   .lower-links {
-    &>tbody>tr>th>table>tbody>tr>th {
-      text-align: center;
+    .link {
+      font-size: 12px;
+      color: #ffffff;
+      margin-right: 10px;
 
-      a {
-        font-size: 12px;
-        color: #ffffff;
-        margin-right: 10px;
+      &:nth-child(4) {
+        margin-right: 0;
+      }
 
-        &:nth-child(4) {
-          margin-right: 0;
-        }
-
-        &:hover {
-          color: $primary-color;
-        }
+      &:hover {
+        color: $primary-color;
       }
     }
   }
+
 
   .privacy {
     th {
@@ -428,7 +425,7 @@ html,
     p {
       color: #a0a1a3;
       font-size: 10px;
-
+      padding-bottom: 30px;
     }
   }
 
@@ -437,8 +434,9 @@ html,
     th {
       padding-bottom: 0;
     }
+
     .columns {
-      &>table>tbody>tr>th {
+      p {
         color: #d0d0d1;
         font-size: 13px;
         font-weight: 400;
@@ -446,4 +444,8 @@ html,
       }
     }
   }
+}
+
+.center-tag {
+  min-width: auto !important;
 }
